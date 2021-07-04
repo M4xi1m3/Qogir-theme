@@ -1,11 +1,11 @@
 /* Dash */
 
-$dash_background_color: lighten($panel_bg, 5%);
+$dash_background_color: rgba(black, 0.0);
 $dash_placeholder_size: 32px;
-$dash_padding: 10px; // 10px
+$dash_padding: 4px; // 10px
 $dash_spacing: 2px;
 
-$dash_bottom_margin: 16px;
+$dash_bottom_margin: 2px;
 $dash_border_radius: 3px;
 
 #dash {
@@ -31,11 +31,10 @@ $dash_border_radius: 3px;
 }
 
 .dash-background {
-  background-color: rgba($dash_background_color, 0.9);
-  border: 1px solid darken($dash_background_color, 10%);
+  background-color: rgba($dash_background_color, 0.0);
+  border: none;
   margin-bottom: $dash_bottom_margin;
   padding: $dash_padding;
-  border-radius: $dash_border_radius;
 }
 
 // Dash Items
@@ -44,7 +43,7 @@ $dash_border_radius: 3px;
 }
 
 .dash-separator {
-  width: 1px;
+  width: 8px;
   margin: 0 8px $dash_bottom_margin 8px;
-  background-color: transparentize($osd_fg_color, 0.8);
+  background-color: rgba($osd_fg_color, 0.0);
 }
